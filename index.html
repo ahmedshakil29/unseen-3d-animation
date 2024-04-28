@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Believe Site</title>
+    <title>Believe</title>
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <script
@@ -21,168 +21,142 @@
             <i class="fas fa-bars"></i>
           </span>
         </div>
-
+        <!-- navigation menu -->
         <nav class="top-nav">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="gallery.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div class="hero">
-        <span class="slider" id="slider1"></span>
-        <span class="slider" id="slider2"></span>
-        <span class="slider" id="slider3"></span>
-        <span class="slider" id="slider4"></span>
-        <span class="slider" id="slider5"></span>
-        <span class="slider" id="slider6"></span>
-        <span class="slider" id="slider7"></span>
-
-        <div class="imgContainer">
-          <div class="slide_div" id="slide_1">
-            <img src="./images/Frame1.png" alt="" class="img" id="img1" />
-            <a href="#slider1" class="button" id="button1"></a>
+    
+      <div class="container about">    
+        <div class="about-content">
+          <div class="about-img flex">
+            <img src="images/Logo.png" alt="photographer img" />
           </div>
-          <div class="slide_div" id="slide_2">
-            <img src="./images/Frame1.png" alt="" class="img" id="img2" />
-            <a href="#slider2" class="button" id="button2"></a>
-          </div>
-          <div class="slide_div" id="slide_3">
-            <img src="./images/Frame1.png" alt="" class="img" id="img3" />
-            <a href="#slider3" class="button" id="button3"></a>
-          </div>
-          <div class="slide_div" id="slide_4">
-            <img src="./images/Frame1.png" alt="" class="img" id="img4" />
-            <a href="#slider4" class="button" id="button4"></a>
-          </div>
-          <div class="slide_div" id="slide_5">
-            <img src="./images/Frame1.png" alt="" class="img" id="img5" />
-            <a href="#slider5" class="button" id="button5"></a>
-          </div>
-          <div class="slide_div" id="slide_6">
-            <img src="./images/Frame1.png" alt="" class="img" id="img6" />
-            <a href="#slider6" class="button" id="button6"></a>
-          </div>
-          <div class="slide_div" id="slide_7">
-            <img src="./images/Frame1.png" alt="" class="img" id="img7" />
-            <a href="#slider7" class="button" id="button7"></a>
-          </div>
-        </div>
+          <h2><span style=" color: orange; 
+            -webkit-text-stroke-width: 1px; 
+            -webkit-text-stroke-color: black;">Beelieve</span>   In The Process Of Change</h2>
+        </div>      
       </div>
     </header>
     <!-- end of header -->
 
-    <!-- main -->
     <section class="section-one">
-      <div class="container">
-        <div class="sec-one-left">
-          <!-- image here -->
-          <div>
-            <!-- <h3>WE believe</h3>
-            <p>.............................................................</p> -->
+      <!-- <div class="container"> -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./images/Frame2 copy.png"  style="width: 100%;"/>
           </div>
+          <div class="mySlides fade">
+            <img src="./images/Frame4.png" style="width: 100%;" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/Frame2 copy.png" style="width: 100%" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="sec-one-right">
-          <div class="work-content">
-            <h3>
-              We believe in the individuals ability to societal change based on
-              informed choices, emotional regulation and responsible social
-              integration.
-            </h3>
-            <p>
-              Each person possesses the power to shape their environment,
-              influence others positively, and contribute meaningfully to the
-              collective progress of society. By fostering self-awareness,
-              critical thinking, and empathy, we empower individuals to become
-              catalysts for positive transformation, creating a world where
-              every voice is heard, every perspective respected, and every
-              action counts towards building a more inclusive and harmonious
-              society.".
-            </p>
-          </div>
-          <div class="work-imgs">
-            <div class="work-img-1">
-              <!--image here-->
-            </div>
-            <div class="work-img-2">
-              <!-- image here -->
-            </div>
-          </div>
-          <!-- <h3>
-            "Taking an image, freezing a moment, reveals how rich reality truly
-            is."
-          </h3> -->
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
     </section>
-    <h1 style="text-align: center">Our Work</h1>
-    <section id="gallery">
-      <div class="img-card active">
-        <img src="./images/Frame1.png" alt="dubai" />
-        <label for=""> NSPCC Trained CPD Certified </label>
-      </div>
 
-      <div class="img-card">
-        <img src="./images/Frame1.png" alt="newyork" />
-        <label for=""> CPD </label>
-      </div>
-      <div class="img-card">
-        <img src="./images/Frame1.png" alt="london" />
-        <label for=""> Crime Prevention </label>
-      </div>
-      <div class="img-card">
-        <img src="./images/Frame1.png" alt="rome" />
-        <label for=""> CBT Role-play Based Reality Enactment </label>
-      </div>
-      <div class="img-card">
-        <img src="./images/Frame1.png" alt="paris" />
-        <label for="">
-          Self-Protection/Disarming/De-Escalation Techniques
-        </label>
-      </div>
-    </section>
+
+
     <!-- footer -->
-
-    <footer class="footer">
-      <!-- <div class="footer-container"> -->
-      <div class="social-icons">
-        <h2>Be The Best You Can Bee</h2>
-        <ul>
-          <li>
-            <a href="#"><i class="fab fa-snapchat"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
+    <!-- <footer class="footer">
+      <div class="footer-container container">
+        <div class="social-icons">
+          <h2>Be The Best You Can Bee</h2>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-snapchat"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subs">
+            <div class="left">
+              <span><i class="fas fa-phone"></i> +1 (888) 888-8888</span>
+            </div>
+            <div class="middle">
+              <img src="./images/Logo.png" alt="Logo" />
+            </div>
+            <div class="right">
+              <span
+                ><i class="far fa-envelope"></i>
+                contract@blockbusterui.com</span
+              >
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center">&copy; Copyright Believe . 2024</p>
       </div>
-
-      <div class="subs">
-        <div class="contact-us">
-          <ul></ul>
-          <div class="left">
-            <span><i class="fas fa-phone"></i> +1 (888) 888-8888</span>
-            <!-- Phone icon -->
+    </footer> -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social-icons">
+          <h2>Be The Best You Can Bee</h2>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-snapchat"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subs">
+          <div class="contact-us">
+            <!-- <ul></ul> -->
+            <div class="left">
+              <span><i class="fas fa-phone"></i> +1 (888) 888-8888</span>
+            </div>
+            <div class="middle">
+              <img src="./images/Logo.png" alt="Logo" />
+            </div>
+            <div class="right">
+              <span
+                ><i class="far fa-envelope"></i>
+                contract@blockbusterui.com</span
+              >
+            </div>
           </div>
-          <div class="middle">
-            <img src="../Assets/Logo.png" alt="Logo" />
-          </div>
-          <div class="right">
-            <span
-              ><i class="far fa-envelope"></i> contract@blockbusterui.com</span
-            >
-            <!-- Email icon -->
+        </div>
+        <p style="text-align: center">&copy; Copyright Believe . 2024</p>
+      </div>
+    </footer>
+    <!-- <footer class="footer">
+      <div class="footer-container container">
+        <div>
+          <h2>SARAH DOE</h2>      
+        </div>
+        <div>
+          <h3>Free Subscription!</h3>
+          <div class="subs">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email Address" />
+            <button type="submit">SUBSCRIBE</button>
           </div>
         </div>
       </div>
-
       <p>&copy; Copyright Believe . 2024</p>
-      <!-- </div> -->
-    </footer>
+    </footer> -->
     <!-- end of footer -->
 
     <script src="script.js"></script>

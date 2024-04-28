@@ -1,16 +1,5 @@
 const showBtn = document.querySelector(".navBtn");
 const topNav = document.querySelector(".top-nav");
-imgCard = document.querySelectorAll(".img-card");
-imgCard.forEach((element) => {
-  element.addEventListener("click", function (e) {
-    //remove active class
-    imgCard.forEach((el) => {
-      el.classList.remove("active");
-    });
-
-    element.classList.add("active");
-  });
-});
 
 showBtn.addEventListener("click", function () {
   if (topNav.classList.contains("showNav")) {
@@ -23,6 +12,33 @@ showBtn.addEventListener("click", function () {
 });
 
 /* Lightbox */
-var lightbox = new SimpleLightbox(".gallery a", {
-  /* options */
-});
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
