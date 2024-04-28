@@ -274,11 +274,11 @@ blockquote span {
     url(./images/Frame2.png) no-repeat 50% 50% / cover;
 }
 
-/* .swiper-slide--three {
+.swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url(./images/Frame2.png) no-repeat 50% 50% / cover;
 }
-
+/*
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url(./images/Frame2.png) no-repeat 50% 50% / cover;
