@@ -199,6 +199,7 @@ blockquote span {
   letter-spacing: 5px;
   display: block;
 }
+/* 
 .social-icons {
   width: 350px;
   margin: 40px auto 0 auto;
@@ -224,7 +225,7 @@ blockquote span {
 .social-icons ul a:hover {
   background: var(--lightGreen);
   border-color: var(--lightGreen);
-}
+} */
 
 /********************* End of Header ***********************/
 .sectionDemo {
@@ -355,138 +356,97 @@ blockquote span {
 }
 
 /************** end of contact.html **********/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+  background-color: white;
+} */
+/******************* Footer Styling *****************/
+
 .footer {
-  background: var(--darkGrey);
-  color: #fff;
-  padding: 4px 0;
-  text-align: center;
-}
-.footer-container > div {
-  margin: 40px 0;
-}
-.footer-container h2 {
-  color: var(--lightGreen);
-  font-size: 36px;
-  font-weight: 500;
-}
-
-.social-icons {
-  width: 350px;
-  margin: 40px auto 0 auto;
-  padding-bottom: 30px;
-}
-
-.social-icons ul a {
-  color: #fff;
-  font-size: 30px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
-  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  /* background: #2929c4; */
+  color: #020202;
+  min-height: 100px;
+  padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: var(--transition);
-}
-.social-icons ul {
-  display: flex;
-  justify-content: space-around;
-}
-.social-icons ul a:hover {
-  background: var(--lightGreen);
-  border-color: var(--lightGreen);
+  flex-direction: column;
 }
 
-.subs {
-  width: 600px;
+.social-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 20px auto auto auto;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
 }
 
-.contact-us {
+.icon-elem {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.icon {
+  color: #020202;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
   display: flex;
+  justify-content: center;
+  position: relative;
   align-items: center;
+  margin: 10px 0 0 50px;
+  /* margin-left: 100px; */
+  flex-wrap: wrap;
 }
 
-.contact-us .left,
-.contact-us .right {
-  margin-right: 20px;
+.menu-elem {
+  list-style: none;
+  /* margin-left: 15px; */
+}
+.menu-icon {
+  color: #020202;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
-.contact-us .left i,
-.contact-us .right i {
-  margin-right: 5px; /* Adjust the margin between icon and text */
+.menu-icon:hover {
+  opacity: 1;
 }
 
-.contact-us .middle {
-  flex-grow: 1;
+.text {
+  color: black;
   text-align: center;
-  margin: 0 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
-
-.contact-us img {
-  max-width: 50px;
-}
-/******************* Footer Styling *****************/
-/* 
-.footer {
-  background: var(--dark);
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-}
-.footer-container > div {
-  margin: 40px 0;
-}
-.footer-container h2 {
-  color: var(--lightGreen);
-  font-size: 36px;
-  font-weight: 500;
-}
-.footer-container p {
-  opacity: 0.7;
-}
-.subs {
-  width: 350px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px auto;
-}
-.subs i {
-  font-size: 26px;
-  flex: 10%;
-  display: block;
-}
-.subs input {
-  flex: 60%;
-  background: transparent;
-  border: none;
-  font-size: 16px;
-  padding: 0 5px;
-  outline: 0;
-  color: #fff;
-}
-.subs button {
-  flex: 30%;
-  font-size: 16px;
-  padding: 15px 0;
-  font-weight: bold;
-  background: var(--lightGreen);
-  border: none;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.subs button:hover {
-  color: #fff;
-}
-.footer > p {
-  text-align: center;
-  font-size: 14px;
-} */
 
 /******************* end of footer ****************/
 
@@ -498,6 +458,13 @@ blockquote span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
+  }
+  .social-icons h2 {
+    font-size: 12px;
+  }
+  .social-icons {
+    width: 16px;
+    margin: auto;
   }
 }
 
@@ -605,22 +572,17 @@ blockquote span {
   /* footer */
   .footer-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* footer */
   .footer-container > div {
-    width: 60%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  /* section three */
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
