@@ -199,33 +199,44 @@ blockquote span {
   letter-spacing: 5px;
   display: block;
 }
-/* 
-.social-icons {
-  width: 350px;
-  margin: 40px auto 0 auto;
-  padding-bottom: 30px;
-}
-.social-icons ul a {
-  color: #fff;
-  font-size: 30px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: var(--transition);
-}
-.social-icons ul {
-  display: flex;
-  justify-content: space-around;
-}
-.social-icons ul a:hover {
-  background: var(--lightGreen);
-  border-color: var(--lightGreen);
+/* section one */
+/* .section-one {
+  margin: 4px 0;
+  min-height: 40vh;
 } */
+
+.section-one {
+  margin: 2px 0;
+  min-height: 30vh;
+  margin-bottom: 0px; /* Add margin bottom to create space between section elements */
+}
+
+.section-one:last-child {
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+.sec-one-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 1px;
+}
+
+.sec-one-left div {
+  color: #ff1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.sec-one-left img {
+  max-width: 80%;
+  max-height: 80%;
+}
 
 /********************* End of Header ***********************/
 .sectionDemo {
@@ -546,18 +557,14 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  /* section one */
   .section-one .container {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-column-gap: 50px;
   }
   .sec-one-left {
     align-self: center;
   }
-  .work-content {
-    margin-top: 0;
-  }
+
   .sec-one-left {
     height: 100%;
   }
@@ -583,13 +590,6 @@ body {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  /* section four */
-  .blog-wrapper-sm {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -635,9 +635,5 @@ body {
   .btn {
     font-size: 14px;
     padding: 8px 0;
-  }
-  .work-imgs {
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
   }
 }
