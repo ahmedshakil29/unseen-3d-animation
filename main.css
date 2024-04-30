@@ -81,8 +81,6 @@ p {
   min-height: 100vh;
   background: url("images/Frame1.png") center/cover no-repeat;
   color: #fff;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("images/Frame1.png") center/cover no-repeat; */
 }
 .top-nav a {
   color: #fff;
@@ -155,6 +153,24 @@ p {
 .about {
   margin-top: -160px;
 }
+
+.about-content {
+  position: relative;
+}
+
+/* .about-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+} */
+
+.about-content h2 {
+  position: absolute;
+  top: 700px;
+  left: 20px;
+  font-size: 40px; /* Adjust font size as needed */
+}
+
 .about-content img {
   width: 140px;
   height: 140px;
@@ -166,15 +182,18 @@ p {
   height: 150px;
   margin: 0 auto;
   border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Adjust the left position as needed */
 }
-.about-content h2 {
+/* .about-content h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 35px;
   color: white;
   font-weight: 700;
-}
-.about-content h3 {
+} */
+/* .about-content h3 {
   color: #fff;
   font-size: 30px;
   font-weight: 100;
@@ -182,8 +201,8 @@ p {
   width: 400px;
   margin: 35px auto;
   text-align: center;
-}
-blockquote {
+} */
+/* blockquote {
   font-size: 20px;
   font-weight: 300;
   opacity: 0.9;
@@ -198,7 +217,7 @@ blockquote span {
   font-weight: 700;
   letter-spacing: 5px;
   display: block;
-}
+} */
 /* section one */
 /* .section-one {
   margin: 4px 0;
@@ -207,13 +226,8 @@ blockquote span {
 
 .section-one {
   margin: 2px 0;
-  min-height: 30vh;
-  margin-bottom: 0px; /* Add margin bottom to create space between section elements */
-}
-
-.section-one:last-child {
-  margin-bottom: 0;
-  margin-top: 0px;
+  min-height: 25vh;
+  margin-bottom: 0px;
 }
 
 .sec-one-left {
@@ -221,7 +235,7 @@ blockquote span {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 80%;
   margin-top: 1px;
 }
 
@@ -233,13 +247,112 @@ blockquote span {
   padding: 30px;
 }
 
+/* .sec-one-left img {
+  max-width: 100%;
+  max-height: 90%;
+} */
 .sec-one-left img {
-  max-width: 80%;
-  max-height: 80%;
+  width: 100%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure the image doesn't overflow its container */
+  object-fit: cover; /* Cover the container with the image */
+}
+
+/* section two */
+.section-two {
+  margin: 80px 0;
+  /* background-color: #a79e8f; */
+}
+.section-two h2 {
+  text-align: left;
+  font-size: 40px;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Change to column direction */
+  min-height: 60vh;
+  /* background-color: #e8ece8; */
+}
+
+#gallery h1 {
+  margin-top: 1rem; /* Adjust as needed */
+  margin-bottom: 2rem; /* Adjust as needed */
+  text-align: center; /* Center the text */
+}
+
+.img-card {
+  width: 4rem;
+  height: 420px;
+  margin: 0.5rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  position: relative;
+  cursor: pointer;
+  background-color: black;
+  /* transition: all 0.75s ease-in-out; */
+}
+
+.img-card.active {
+  width: 41vw;
+}
+
+.img-card:not(.active):hover {
+  transform: scale(1.25);
+  box-shadow: 0 24px 32px -12px #10101094;
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-card label {
+  padding: 1.25rem;
+  border: 2px solid #fff3;
+  border-radius: 240rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #ffffff;
+  backdrop-filter: blur(8px) brightness(85%);
+  -webkit-backdrop-filter: blur(8px) brightness(85%);
+  font-size: 1px;
+  font-weight: 700;
+  /* word-break: break-all; */
+  text-transform: uppercase;
+}
+
+.img-card.active label {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  border-radius: 20px;
+}
+
+.img-card:not(.active) label {
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  backdrop-filter: blur(1px) brightness(5%);
+  -webkit-backdrop-filter: blur(1px) brightness(85%);
+  /* Vertical writing mode */
+  writing-mode: vertical-rl;
+  /* text-align: center; */
+  transform: rotate(-180deg);
+  /* margin: 0 20px; */
+  background-color: #ffa500;
 }
 
 /********************* End of Header ***********************/
-.sectionDemo {
+/* .sectionDemo {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -289,7 +402,61 @@ blockquote span {
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url(./images/Frame2.png) no-repeat 50% 50% / cover;
+} */
+.sectionDemo {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.swiper {
+  width: 100vw; /* Set to viewport width */
+  height: 100%; /* Set to full height of the container */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 90vw; /* Adjusted for wider display */
+  height: 80vh; /* Adjusted for taller display */
+  /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
+  box-shadow: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  background-size: contain; /* Adjust image size to fit within the slide */
+  background-position: center; /* Center the image */
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+.swiper-slide--one {
+  /* background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(./images/Frame2.png) no-repeat 50% 50%; */
+  background: url(./images/Frame2.png) no-repeat 50% 50%;
+}
+
+.swiper-slide--two {
+  background: url(./images/Frame2.png) no-repeat 50% 50%;
+}
+
+.swiper-slide--three {
+  background: url(./images/Frame2.png) no-repeat 50% 50%;
+}
+
 /*
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
@@ -603,13 +770,13 @@ body {
   .social-icons {
     display: none;
   }
-  .about-content h3 {
+  .about-content h2 {
     width: 100%;
   }
-  .about-content blockquote {
+  /* .about-content blockquote {
     font-size: 16px;
     width: 100%;
-  }
+  } */
   .subs {
     width: 280px;
   }
