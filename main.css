@@ -158,9 +158,15 @@ p {
   position: relative;
 }
 
+/* .about-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+} */
+
 .about-content h2 {
   position: absolute;
-  top: 70vh;
+  top: 700px;
   left: 20px;
   font-size: 40px; /* Adjust font size as needed */
 }
@@ -177,9 +183,46 @@ p {
   margin: 0 auto;
   border-radius: 50%;
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 20px; /* Adjust the left position as needed */
 }
+/* .about-content h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: white;
+  font-weight: 700;
+} */
+/* .about-content h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+  background: rgba(255, 255, 255, 0.1);
+  width: 400px;
+  margin: 35px auto;
+  text-align: center;
+} */
+/* blockquote {
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 0.9;
+  width: 60vw;
+  margin: 45px auto 15px auto;
+  text-align: center;
+}
+blockquote span {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--darkGreen);
+  font-weight: 700;
+  letter-spacing: 5px;
+  display: block;
+} */
+/* section one */
+/* .section-one {
+  margin: 4px 0;
+  min-height: 40vh;
+} */
 
 .section-one {
   margin: 2px 0;
