@@ -669,10 +669,10 @@ body {
   .navBtn {
     display: none;
   }
-  /* .brand-and-navBtn {
+  .brand-and-navBtn {
     flex: 0 0 10%;
     background: none;
-  } */
+  }
   .top-nav {
     flex: 0 1 80%;
     display: flex;
