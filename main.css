@@ -604,7 +604,7 @@ body {
   justify-content: center;
   position: relative;
   align-items: center;
-  margin: 10px 0 0 50px;
+  margin: 10px 0 0 0;
   /* margin-left: 100px; */
   flex-wrap: wrap;
 }
