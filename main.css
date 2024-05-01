@@ -255,6 +255,7 @@ blockquote span {
 /* section two */
 .section-two {
   margin: 80px 0;
+
   /* background-color: #a79e8f; */
 }
 .section-two h2 {
@@ -268,6 +269,7 @@ blockquote span {
   align-items: center;
   flex-direction: row; /* Change to column direction */
   min-height: 60vh;
+
   /* background-color: #e8ece8; */
 }
 
@@ -276,16 +278,23 @@ blockquote span {
   margin-bottom: 2rem; /* Adjust as needed */
   text-align: center; /* Center the text */
 }
-
+/* .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; 
+  background-color: brown; 
+  padding: 0.5rem; 
+} */
 .img-card {
   width: 4rem;
   height: 420px;
   margin: 0.5rem;
   overflow: hidden;
-  border-radius: 2rem;
+
+  /* border-radius: 2rem; */
   position: relative;
   cursor: pointer;
-  background-color: black;
+  background-color: brown;
   /* transition: all 0.75s ease-in-out; */
 }
 
