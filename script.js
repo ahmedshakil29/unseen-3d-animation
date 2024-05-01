@@ -11,6 +11,19 @@ imgCard.forEach((element) => {
     element.classList.add("active");
   });
 });
+// const imgCards = document.querySelectorAll(".img-card");
+
+// imgCards.forEach((imgCard) => {
+//   imgCard.addEventListener("click", function () {
+//     imgCards.forEach((card) => {
+//       card.classList.remove("active");
+//       card.style.backgroundImage = "none";
+//     });
+//     this.classList.add("active");
+//     this.style.backgroundImage = "url('./images/Frame2.png')";
+//   });
+// });
+
 showBtn.addEventListener("click", function () {
   if (topNav.classList.contains("showNav")) {
     topNav.classList.remove("showNav");
