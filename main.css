@@ -496,20 +496,11 @@ blockquote span {
 .section-five {
   margin: 40px 0;
 }
+
 .section-five .container div {
   margin: 20px 0;
 }
-.contact-top {
-  text-align: center;
-}
-.contact-top h3 {
-  font-size: 28px;
-}
-.contact-top p {
-  font-weight: 300;
-  width: 70%;
-  margin: 0 auto;
-}
+
 .contact-middle div {
   text-align: center;
   padding: 25px 0;
@@ -533,10 +524,29 @@ blockquote span {
 .contact-bottom {
   margin-top: 50px !important;
 }
+/* .form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 50%;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid orange;
+  outline: none;
+  border-radius: 5px;
+} */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Set the width of the form to match its parent */
+}
+
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
-  width: 100%;
+  width: 50%;
   font-size: 16px;
   padding: 10px 15px;
   margin: 10px 0;
@@ -544,6 +554,7 @@ blockquote span {
   outline: none;
   border-radius: 5px;
 }
+
 .form input[type="submit"] {
   border: 1px solid orange;
 }
@@ -652,7 +663,7 @@ body {
   /* section five */
   .contact-middle {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
   }
   .social-icons h2 {
@@ -736,7 +747,7 @@ body {
   }
   .contact-bottom {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 40px;
   }
 }
