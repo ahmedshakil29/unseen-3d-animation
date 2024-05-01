@@ -504,8 +504,8 @@ blockquote span {
 .contact-middle div {
   text-align: center;
   padding: 25px 0;
-  background: var(--dark);
-  color: #fff;
+  background: orange;
+  color: black;
 }
 .contact-middle div span {
   display: block;
@@ -531,9 +531,12 @@ blockquote span {
   font-size: 16px;
   padding: 10px 15px;
   margin: 10px 0;
-  border: 1px solid var(--lightGreen);
+  border: 1px solid orange;
   outline: none;
   border-radius: 5px;
+}
+.form input[type="submit"] {
+  border: 1px solid orange;
 }
 .contact-bottom .form {
   padding: 0 20px;
