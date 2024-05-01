@@ -167,15 +167,15 @@ p {
 
 .about-content img {
   width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  height: 150px;
+  /* border-radius: 50%; */
 }
 .about-img {
-  background: #fff;
+  /* background: #fff; */
   width: 150px;
   height: 150px;
   margin: 0 auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   position: absolute;
   /* top: 2vh; */
   left: 20px; /* Adjust the left position as needed */
