@@ -11,18 +11,6 @@ imgCard.forEach((element) => {
     element.classList.add("active");
   });
 });
-// const imgCards = document.querySelectorAll(".img-card");
-
-// imgCards.forEach((imgCard) => {
-//   imgCard.addEventListener("click", function () {
-//     imgCards.forEach((card) => {
-//       card.classList.remove("active");
-//       card.style.backgroundImage = "none";
-//     });
-//     this.classList.add("active");
-//     this.style.backgroundImage = "url('./images/Frame2.png')";
-//   });
-// });
 
 showBtn.addEventListener("click", function () {
   if (topNav.classList.contains("showNav")) {
@@ -53,23 +41,3 @@ var swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
-
-// var swiper = new Swiper(".swiper", {
-//   effect: "coverflow",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   coverflowEffect: {
-//     rotate: 0,
-//     stretch: 0,
-//     depth: 100,
-//     modifier: 0,
-//     slideShadows: true,
-//   },
-//   spaceBetween: 60,
-//   // loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
