@@ -265,12 +265,12 @@ p {
 
   .swiper-slide {
     width: 90vw;
-    height: 30vh;
+    height: 60vh;
   }
 
   .swiper-slide p {
     font-size: 8px;
-    line-height: 20px;
+    line-height: 30px;
   }
 
   .swiper-slide--one,
