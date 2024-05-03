@@ -760,10 +760,9 @@ p {
     width: 100%;
   }
   .about-content h2 {
-    position: absolute;
     top: 60vh;
     left: 20px;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .subs {
