@@ -759,6 +759,12 @@ p {
   .about-content h2 {
     width: 100%;
   }
+  .about-content h2 {
+    position: absolute;
+    top: 60vh;
+    left: 20px;
+    font-size: 40px;
+  }
 
   .subs {
     width: 280px;
