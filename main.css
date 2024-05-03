@@ -186,11 +186,6 @@ p {
     top: 40px;
   }
 }
-@media screen and (min-width: 678px) {
-}
-
-@media screen and (min-width: 800px) {
-}
 
 /********************* End of Header ***********************/
 /* section sectionDemo */
@@ -506,7 +501,7 @@ p {
   opacity: 0.7;
 }
 .contact-bottom {
-  margin-top: 50px !important;
+  margin-top: 30px !important;
 }
 
 .form {
@@ -535,7 +530,14 @@ p {
 .contact-bottom .form {
   padding: 0 20px;
 }
-
+@media screen and (min-width: 501px) and (max-width: 677px) {
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 100%; /* Adjusted for smaller screens */
+    font-size: 16px; /* Maintain font size */
+  }
+}
 /************** end of contact.html **********/
 
 /******************* Footer Styling *****************/
@@ -647,6 +649,12 @@ p {
     width: 16px;
     margin: auto;
   }
+  /* .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 100%;
+    font-size: 16px;
+  } */
 }
 
 @media screen and (min-width: 800px) {
@@ -707,6 +715,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
   }
   .contact-bottom {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 40px;
@@ -782,5 +791,12 @@ p {
   .btn {
     font-size: 14px;
     padding: 8px 0;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    width: 100%;
+    font-size: 16px;
   }
 }
