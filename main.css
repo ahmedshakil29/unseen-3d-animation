@@ -118,7 +118,7 @@ p {
 }
 
 .showNav {
-  transform: translateY(0);
+  transform: translateY(100%);
 }
 /* .search-icon {
   display: none;
@@ -174,7 +174,17 @@ p {
   left: 20px;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 500px) {
+  .header {
+    min-height: 80vh;
+  }
+  .about-img {
+    width: 100px;
+    height: 50px;
+
+    left: 20px;
+    top: 40px;
+  }
 }
 @media screen and (min-width: 678px) {
 }
