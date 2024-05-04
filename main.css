@@ -345,7 +345,7 @@ p {
   /* Tablet View */
   .swiper-slide {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -353,7 +353,7 @@ p {
   /* Large Tablet View */
   .swiper-slide {
     width: 85vw;
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -361,7 +361,7 @@ p {
   /* Desktop View */
   .swiper-slide {
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -451,22 +451,7 @@ p {
   height: 120%;
   border-radius: 0;
 }
-/* @media screen and (min-width: 400px) and (max-width: 550px) {
-  .img-card.active label {
-    font-size: 20px;
-    text-align: left;
-  }
-  .section-two .container div {
-    width: 110vw;
-    margin: 0;
-  }
-  .img-card.active {
-    width: 60vw;
-  }
-  .img-card:not(.active) {
-    width: 1rem;
-  }
-} */
+
 @media screen and (min-width: 300px) and (max-width: 677px) {
   .section-two {
     margin: 80px 0;
@@ -487,7 +472,7 @@ p {
     width: calc(
       80% - 20px
     ); /* Adjusted width for active img-card with spacing */
-    height: 400px; /* Increased height */
+    height: 425px; /* Increased height */
   }
   .img-card img {
     width: 100%;
@@ -496,21 +481,6 @@ p {
     object-fit: fill;
   }
 }
-
-/* @media screen and (min-width: 300px) {
-  .img-card {
-    width: 3rem;
-    height: 420px;
-  }
- 
-  .img-card.active {
-    width: 35vw;
-  }
-  .img-card.active label {
-    font-size: 8px;
-    text-align: left;
-  }
-} */
 
 @media screen and (min-width: 1200px) {
   .img-card.active label {
