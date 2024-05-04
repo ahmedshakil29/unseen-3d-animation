@@ -479,7 +479,7 @@ p {
 
   #gallery {
     display: flex;
-    justify-content: space-between; /* Spacing between img-cards */
+    justify-content: center; /* Spacing between img-cards */
     align-items: flex-start;
   }
 
