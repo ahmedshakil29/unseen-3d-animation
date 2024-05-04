@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <!-- <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Believe</title>
@@ -10,8 +10,43 @@
       src="https://kit.fontawesome.com/dbed6b6114.js"
       crossorigin="anonymous"
     ></script>
+  </head> -->
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Beelieve</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- <header class="header">
+      <div class="nav-section">
+        <div class="brand-and-navBtn">
+          <span class="brand-name"> </span>
+          <span class="navBtn flex">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+        <nav class="top-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
     <header class="header">
       <div class="nav-section">
         <div class="brand-and-navBtn">
@@ -26,8 +61,25 @@
           </ul>
         </nav>
       </div>
+      <div class="container about">
+        <div class="about-content">
+          <div class="about-img flex">
+            <img src="images/BEELIEVE.png" alt="photographer img" />
+          </div>
+          <h2>
+            <span
+              style="
+                color: orange;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+              "
+              >Beelieve</span
+            >
+            In The Process Of Change
+          </h2>
+        </div>
+      </div>
     </header>
-
     <section class="section-five">
       <div class="container">
         <div class="contact-top"></div>
@@ -39,6 +91,9 @@
             </span>
             <span>Email Address</span>
             <p>contract@blockbusterui.com</p>
+            <!-- <a href="mailto:contract@blockbusterui.com"
+              >contract@blockbusterui.com</a
+            > -->
           </div>
           <div>
             <span class="contact-icon">
@@ -50,17 +105,36 @@
           <div style="background-color: white"></div>
         </div>
         <div class="contact-bottom">
-          <form class="form">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea rows="9" placeholder="Message"></textarea>
+          <form class="form" onsubmit="emailSend(); reset(); return false;">
             <input
-              type="submit"
-              class="btn"
-              style="color: orange"
-              value="Send Message"
+              type="text"
+              placeholder="Your Name"
+              id="name"
+              name="name"
+              required
             />
+            <input
+              type="email"
+              placeholder="Your Email"
+              id="email"
+              name="email"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              name="subject"
+              required
+            />
+            <textarea
+              rows="9"
+              placeholder="Message"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <input type="submit" class="btn" style="color: orange" />
           </form>
           <div></div>
         </div>
@@ -107,6 +181,32 @@
       </ul>
       <p class="text">&copy; Copyright Beelieve . 2024</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="email.js"></script>-->
     <script src="script.js"></script>
+    <script>
+      function emailSend() {
+        var userName = document.getElementById("name").value;
+        var subject = document.getElementById("subject").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var messageBody =
+          "Name :" +
+          userName +
+          "<br/> Email :" +
+          email +
+          "<br/> Message :" +
+          message;
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "shakilvalorant@gmail.com",
+          Password: "2CA4576DC64859530CB73AA4C6ECC697BD46",
+          To: "ahmedshakil.aiub@gmail.com",
+          From: "shakilvalorant@gmail.com",
+          Subject: subject,
+          Body: messageBody,
+        }).then((message) => alert(message));
+      }
+    </script>
   </body>
 </html>
