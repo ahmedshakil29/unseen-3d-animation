@@ -498,6 +498,10 @@ p {
     height: 100%;
     object-fit: fill;
   }
+  .img-card.active label {
+    font-size: 12px;
+    /* font-size: 1rem; */
+  }
 }
 /* @media screen and (min-width: 300px) and (max-width: 677px) {
   .section-two {
