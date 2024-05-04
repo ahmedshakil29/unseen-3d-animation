@@ -433,16 +433,13 @@ p {
   color: black;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  /* backdrop-filter: blur(1px) brightness(5%);
-  -webkit-backdrop-filter: blur(1px) brightness(85%); */
   writing-mode: vertical-rl;
   text-align: center;
   transform: rotate(-180deg);
-
   background-color: #ffa500;
-  background-image: url(./images/background2.png);
-  background-size: cover; /* Ensure the background image covers the entire container */
-  background-position: center; /* Center the background image */
+  background-image: url(./images/background4.png);
+  background-size: cover;
+  background-position: center;
 
   position: absolute;
   bottom: 0;
@@ -454,17 +451,58 @@ p {
   height: 120%;
   border-radius: 0;
 }
+/* @media screen and (min-width: 400px) and (max-width: 550px) {
+  .img-card.active label {
+    font-size: 20px;
+    text-align: left;
+  }
+  .section-two .container div {
+    width: 110vw;
+    margin: 0;
+  }
+  .img-card.active {
+    width: 60vw;
+  }
+  .img-card:not(.active) {
+    width: 1rem;
+  }
+} */
+@media screen and (min-width: 300px) and (max-width: 677px) {
+  .section-two {
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Adjusted width for the container */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  }
 
-@media screen and (min-width: 300px) {
+  #gallery {
+    display: flex;
+    justify-content: space-between; /* Spacing between img-cards */
+    align-items: flex-start;
+  }
+
+  .img-card.active {
+    width: calc(
+      80% - 20px
+    ); /* Adjusted width for active img-card with spacing */
+    height: 400px; /* Increased height */
+  }
+  .img-card img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    object-fit: fill;
+  }
+}
+
+/* @media screen and (min-width: 300px) {
   .img-card {
     width: 3rem;
     height: 420px;
   }
-  /* .img-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  } */
+ 
   .img-card.active {
     width: 35vw;
   }
@@ -472,13 +510,7 @@ p {
     font-size: 8px;
     text-align: left;
   }
-}
-@media screen and (min-width: 400px) {
-  .img-card.active label {
-    font-size: 12px;
-    text-align: left;
-  }
-}
+} */
 
 @media screen and (min-width: 1200px) {
   .img-card.active label {
@@ -838,4 +870,9 @@ p {
     width: 100%;
     font-size: 16px;
   }
+
+  /* .section-two .container div {
+    width: 110vw;
+    margin: 0;
+  } */
 }
