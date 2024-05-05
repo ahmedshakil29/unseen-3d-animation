@@ -252,10 +252,15 @@ p {
 
   .swiper-slide {
     width: 85vw;
-    height: 60vh;
+    height: 40vh;
   }
   .swiper-slide p {
-    font-size: 8px;
+    font-size: 4px;
+  }
+  swiper-slide--one,
+  .swiper-slide--two,
+  .swiper-slide--three {
+    background-size: cover; /* Ensure the background image covers the entire slide */
   }
 }
 
@@ -266,11 +271,11 @@ p {
 
   .swiper-slide {
     width: 85vw;
-    height: 60vh;
+    height: 40vh;
   }
 
   .swiper-slide p {
-    font-size: 12px;
+    font-size: 8px;
     line-height: 30px;
   }
 
@@ -300,9 +305,12 @@ p {
   }
 }
 @media screen and (min-width: 500px) and (max-width: 677px) {
+  .sectionDemo {
+    min-height: 60vh;
+  }
   .swiper-slide {
     width: 85vw;
-    height: 70vh;
+    height: 60vh;
   }
   .swiper-slide p {
     font-size: 20px;
