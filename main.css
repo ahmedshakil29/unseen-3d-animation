@@ -438,7 +438,7 @@ p {
   writing-mode: vertical-rl;
   text-align: center;
   transform: rotate(-180deg);
-  background-color: #ffa500;
+  /* background-color: #ffa500; */
   background-image: url(./images/background4.png);
   background-size: cover;
   background-position: center;
@@ -454,35 +454,6 @@ p {
   border-radius: 0;
 }
 
-/* @media screen and (min-width: 300px) and (max-width: 677px) {
-  .section-two {
-    margin: 80px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 100%;
-  }
-  #gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .img-card.active {
-    width: 75%;
-    height: 425px;
-  }
-  .img-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-  }
-  .img-card:not(.active) label {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-} */
-
 @media screen and (min-width: 300px) and (max-width: 677px) {
   .section-two {
     margin: 30px 2%;
@@ -493,69 +464,95 @@ p {
     width: 95%;
     max-width: 100%;
   }
+  .img-card {
+    width: 2rem;
+    height: 300px;
+  }
+  .img-card.active {
+    width: 55vw;
+  }
   .img-card img {
     width: 100%;
     height: 100%;
     object-fit: fill;
   }
   .img-card.active label {
-    font-size: 12px;
+    font-size: 8px;
     /* font-size: 1rem; */
   }
-}
-/* @media screen and (min-width: 300px) and (max-width: 677px) {
-  .section-two {
-    margin: 30px 0;
-    margin-left: 5%;
+  .img-card:not(.active) label {
+    width: calc(100% - 2.5rem); /* Adjust the width as needed */
+    margin: 0;
+    z-index: 1;
+    font-size: 8px;
+    text-align: center;
+    /* Center vertically y*/
+    align-items: center;
+    /* Center horizontally x*/
+    /* justify-content: center;  */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.25rem;
     display: flex;
-    flex-direction: column;
+    /* width: 10%; */
+    height: 120%;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 299px) {
+  .section-two {
+    margin: 1px 2%;
+    /* margin-left: 2%; */
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 95%;
     max-width: 100%;
   }
-
   #gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 40vh;
+    min-height: 30vh;
   }
 
   .img-card {
-    width: 4.2rem;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    background-color: rgb(236, 229, 229);
+    width: 2rem;
+    height: 200px;
   }
-
   .img-card.active {
-    width: 100%;
+    width: 55vw;
   }
-
-  .img-card:not(.active) {
-    width: 100%;
-    height: 40px;
-  }
-
   .img-card img {
     width: 100%;
     height: 100%;
     object-fit: fill;
   }
-  .img-card label {
-    font-size: 1px;
+  .img-card.active label {
+    font-size: 4px;
+    font-weight: 700;
+    /* font-size: 1rem; */
   }
-
   .img-card:not(.active) label {
-    writing-mode: horizontal-tb;
-    transform: rotate(-360deg);
-    text-align: left;
+    width: calc(100% - 2.5rem); /* Adjust the width as needed */
+    margin: 0;
+    z-index: 1;
+    font-size: 5px;
+    text-align: center;
+    /* Center vertically y*/
+    align-items: center;
+    /* Center horizontally x*/
+    /* justify-content: center;  */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.9rem;
+    display: flex;
+    /* width: 10%; */
+    height: 120%;
+    border-radius: 0;
   }
-} */
+}
 @media screen and (min-width: 678px) and (max-width: 1150px) {
   .section-two {
     margin: 80px auto;
