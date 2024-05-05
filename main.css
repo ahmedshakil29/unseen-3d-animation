@@ -247,24 +247,25 @@ p {
 /* Media Queries */
 @media screen and (max-width: 200px) {
   .sectionDemo {
-    min-height: 40vh;
+    min-height: 30vh;
   }
 
   .swiper-slide {
     width: 85vw;
-    height: 40vh;
+    height: 25vh;
   }
   .swiper-slide p {
     font-size: 4px;
+    line-height: 15px;
   }
-  swiper-slide--one,
+  .swiper-slide--one,
   .swiper-slide--two,
   .swiper-slide--three {
     background-size: cover; /* Ensure the background image covers the entire slide */
   }
 }
 
-@media screen and (min-width: 201px) and (max-width: 399px) {
+@media screen and (min-width: 201px) and (max-width: 349px) {
   .sectionDemo {
     min-height: 40vh;
   }
@@ -276,7 +277,7 @@ p {
 
   .swiper-slide p {
     font-size: 8px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .swiper-slide--one,
@@ -286,7 +287,7 @@ p {
     background-position: center;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 499px) {
+@media screen and (min-width: 350px) and (max-width: 499px) {
   .sectionDemo {
     min-height: 50vh;
   }
@@ -295,7 +296,8 @@ p {
     height: 50vh;
   }
   .swiper-slide p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 30px;
   }
   .swiper-slide--one,
   .swiper-slide--two,
@@ -512,7 +514,6 @@ p {
 @media screen and (max-width: 299px) {
   .section-two {
     margin: 1px 2%;
-    /* margin-left: 2%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,7 +521,33 @@ p {
     max-width: 100%;
   }
   #gallery {
-    min-height: 30vh;
+    min-height: 25vh;
+  }
+  /* For screens between 300px and 500px width */
+
+  /* Change the first image */
+  #gallery .img-card:nth-child(1) img {
+    content: url("./images/smallCBT.png");
+  }
+
+  /* Change the second image */
+  #gallery .img-card:nth-child(2) img {
+    content: url("./images/smallNSPCC.png");
+  }
+
+  /* Change the third image */
+  #gallery .img-card:nth-child(3) img {
+    content: url("./images/smallCBT.png");
+  }
+
+  /* Change the fourth image */
+  #gallery .img-card:nth-child(4) img {
+    content: url("./images/smallNSPCC.png");
+  }
+
+  /* Change the fifth image */
+  #gallery .img-card:nth-child(5) img {
+    content: url("./images/smallCBT.png");
   }
 
   .img-card {
@@ -914,7 +941,9 @@ p {
     left: 20px;
     font-size: 30px;
   }
-
+  .footer h2 {
+    font-size: 3px;
+  }
   .subs {
     width: 280px;
   }
