@@ -76,8 +76,11 @@ p {
 
 .header {
   min-height: 100vh;
-  background: url("images/Beelievemain.png") center/cover no-repeat;
-  color: #fff;
+  /* background: url("images/Beelievemain.png") center/contain no-repeat; */
+  background: url("images/Beelievemain.png") center/contain no-repeat;
+  /* background-size: contain; */
+  background-size: 100% 100%; /* Cover full width, maintain aspect ratio */
+  color: orange;
 }
 .brand-and-navBtn {
   position: relative;
@@ -109,7 +112,7 @@ p {
   transition: var(--transition);
 }
 .top-nav {
-  background: #000;
+  background: orange;
   transform: translateY(-600px);
   transition: var(--transition);
 }
@@ -159,7 +162,11 @@ p {
   left: 20px;
   font-size: 40px;
 }
-
+.about-content span {
+  color: orange;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 .about-content img {
   width: 140px;
   height: 150px;
@@ -921,12 +928,17 @@ p {
   .social-icons {
     display: none;
   }
+  /* .about-content h2 {
+    width: 100%;
+  } */
   .about-content h2 {
     width: 100%;
-  }
-  .about-content h2 {
-    top: 60vh;
+    top: 65vh;
     left: 20px;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .about-content span {
     font-size: 30px;
   }
   .footer h2 {
